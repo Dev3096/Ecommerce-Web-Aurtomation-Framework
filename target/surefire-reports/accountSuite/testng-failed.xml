@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [accountSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="TestComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Backend Page Test(failed)" verbose="0">
+    <classes>
+      <class name="TechPanda.BackendPage">
+        <methods>
+          <include name="backendData"/>
+          <include name="closeBrowser"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- TechPanda.BackendPage -->
+    </classes>
+  </test> <!-- Backend Page Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Cart Page Test(failed)" verbose="0">
+    <classes>
+      <class name="TechPanda.CartPage">
+        <methods>
+          <include name="launchApp"/>
+          <include name="checkquantity"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TechPanda.CartPage -->
+    </classes>
+  </test> <!-- Cart Page Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Account Page Test(failed)" verbose="0">
+    <classes>
+      <class name="TechPanda.AccountPage">
+        <methods>
+          <include name="loginAccount"/>
+          <include name="launchApp"/>
+          <include name="createAccount"/>
+          <include name="closeBrowser"/>
+          <include name="verifyOrderPlaced"/>
+        </methods>
+      </class> <!-- TechPanda.AccountPage -->
+    </classes>
+  </test> <!-- Account Page Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Mobile Page Test(failed)" verbose="0">
+    <classes>
+      <class name="TechPanda.MobilePage">
+        <methods>
+          <include name="verifyPrice"/>
+          <include name="checkSorted"/>
+          <include name="launchApp"/>
+          <include name="closeBrowser"/>
+          <include name="checkCompare"/>
+        </methods>
+      </class> <!-- TechPanda.MobilePage -->
+    </classes>
+  </test> <!-- Mobile Page Test(failed) -->
+</suite> <!-- Failed suite [accountSuite] -->

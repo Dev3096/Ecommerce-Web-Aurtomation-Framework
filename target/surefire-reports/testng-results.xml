@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-09T17:36:23 GMT-05:00" name="accountSuite" finished-at="2023-05-09T17:37:11 GMT-05:00" duration-ms="48292">
+    <groups>
+      <group name="mobile">
+        <method signature="MobilePage.checkCompare()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" name="checkCompare" class="TechPanda.MobilePage"/>
+        <method signature="MobilePage.verifyPrice()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" name="verifyPrice" class="TechPanda.MobilePage"/>
+      </group> <!-- mobile -->
+      <group name="backend">
+        <method signature="BackendPage.backendData()[pri:0, instance:TechPanda.BackendPage@4722ef0c]" name="backendData" class="TechPanda.BackendPage"/>
+      </group> <!-- backend -->
+      <group name="orders">
+        <method signature="AccountPage.verifyOrderPlaced()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" name="verifyOrderPlaced" class="TechPanda.AccountPage"/>
+      </group> <!-- orders -->
+      <group name="accounts">
+        <method signature="AccountPage.createAccount()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" name="createAccount" class="TechPanda.AccountPage"/>
+      </group> <!-- accounts -->
+      <group name="checkOut">
+        <method signature="AccountPage.loginAccount()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" name="loginAccount" class="TechPanda.AccountPage"/>
+      </group> <!-- checkOut -->
+      <group name="sortmobile">
+        <method signature="MobilePage.checkSorted()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" name="checkSorted" class="TechPanda.MobilePage"/>
+      </group> <!-- sortmobile -->
+      <group name="inCart">
+        <method signature="CartPage.checkquantity(java.util.HashMap)[pri:0, instance:TechPanda.CartPage@6a8658ff]" name="checkquantity" class="TechPanda.CartPage"/>
+      </group> <!-- inCart -->
+    </groups>
+    <test started-at="2023-05-09T17:36:23 GMT-05:00" name="Backend Page Test" finished-at="2023-05-09T17:36:46 GMT-05:00" duration-ms="23271">
+      <class name="TechPanda.BackendPage">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.BackendPage@4722ef0c]" started-at="2023-05-09T17:36:23 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:30 GMT-05:00" duration-ms="7254" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="backendData()[pri:0, instance:TechPanda.BackendPage@4722ef0c]" started-at="2023-05-09T17:36:30 GMT-05:00" name="backendData" finished-at="2023-05-09T17:36:43 GMT-05:00" duration-ms="12385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backendData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.BackendPage@4722ef0c]" started-at="2023-05-09T17:36:43 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:36:46 GMT-05:00" duration-ms="3563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TechPanda.BackendPage -->
+    </test> <!-- Backend Page Test -->
+    <test started-at="2023-05-09T17:36:23 GMT-05:00" name="Cart Page Test" finished-at="2023-05-09T17:37:01 GMT-05:00" duration-ms="38129">
+      <class name="TechPanda.CartPage">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:23 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:31 GMT-05:00" duration-ms="7721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="checkquantity(java.util.HashMap)[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:31 GMT-05:00" name="checkquantity" data-provider="getData" finished-at="2023-05-09T17:36:42 GMT-05:00" duration-ms="11429" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{quantity=1000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkquantity -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:42 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:36:44 GMT-05:00" duration-ms="2277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:44 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:49 GMT-05:00" duration-ms="4614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="checkquantity(java.util.HashMap)[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:49 GMT-05:00" name="checkquantity" data-provider="getData" finished-at="2023-05-09T17:36:59 GMT-05:00" duration-ms="9440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{quantity=1000}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkquantity -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.CartPage@6a8658ff]" started-at="2023-05-09T17:36:59 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:37:01 GMT-05:00" duration-ms="2574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TechPanda.CartPage -->
+    </test> <!-- Cart Page Test -->
+    <test started-at="2023-05-09T17:36:23 GMT-05:00" name="Mobile Page Test" finished-at="2023-05-09T17:37:03 GMT-05:00" duration-ms="39714">
+      <class name="TechPanda.MobilePage">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:23 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:31 GMT-05:00" duration-ms="7736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="checkCompare()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:31 GMT-05:00" name="checkCompare" finished-at="2023-05-09T17:36:38 GMT-05:00" duration-ms="7008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkCompare -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:38 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:36:41 GMT-05:00" duration-ms="3277" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:41 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:46 GMT-05:00" duration-ms="4441" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="checkSorted()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:46 GMT-05:00" name="checkSorted" finished-at="2023-05-09T17:36:51 GMT-05:00" duration-ms="5558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkSorted -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:51 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:36:54 GMT-05:00" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:54 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:58 GMT-05:00" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="verifyPrice()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:36:58 GMT-05:00" name="verifyPrice" finished-at="2023-05-09T17:37:00 GMT-05:00" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPrice -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.MobilePage@6b09fb41]" started-at="2023-05-09T17:37:00 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:37:03 GMT-05:00" duration-ms="2387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TechPanda.MobilePage -->
+    </test> <!-- Mobile Page Test -->
+    <test started-at="2023-05-09T17:36:23 GMT-05:00" name="Account Page Test" finished-at="2023-05-09T17:37:11 GMT-05:00" duration-ms="48292">
+      <class name="TechPanda.AccountPage">
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:36:23 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:31 GMT-05:00" duration-ms="7720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="createAccount()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:36:31 GMT-05:00" name="createAccount" finished-at="2023-05-09T17:36:43 GMT-05:00" duration-ms="12290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createAccount -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:36:43 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:36:47 GMT-05:00" duration-ms="3876" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:36:47 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:36:51 GMT-05:00" duration-ms="4515" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="loginAccount()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:36:51 GMT-05:00" name="loginAccount" finished-at="2023-05-09T17:37:01 GMT-05:00" duration-ms="9246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAccount -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:37:01 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:37:03 GMT-05:00" duration-ms="2390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="launchApp()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:37:03 GMT-05:00" name="launchApp" finished-at="2023-05-09T17:37:07 GMT-05:00" duration-ms="3810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method signature="verifyOrderPlaced()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:37:07 GMT-05:00" name="verifyOrderPlaced" finished-at="2023-05-09T17:37:09 GMT-05:00" duration-ms="2115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderPlaced -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TechPanda.AccountPage@1750fbeb]" started-at="2023-05-09T17:37:09 GMT-05:00" name="closeBrowser" finished-at="2023-05-09T17:37:11 GMT-05:00" duration-ms="2266" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TechPanda.AccountPage -->
+    </test> <!-- Account Page Test -->
+  </suite> <!-- accountSuite -->
+</testng-results>
